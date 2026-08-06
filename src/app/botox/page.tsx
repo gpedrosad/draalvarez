@@ -124,7 +124,7 @@ export default function BotoxPage() {
               className="animate-hero-line animate-hero-line-1 hidden h-9 w-auto object-contain md:block md:h-11"
               sizes="44px"
             />
-            <p className="animate-hero-line animate-hero-line-2 text-[0.65rem] uppercase tracking-[0.16em] text-primary md:mt-4 md:text-[0.68rem] md:tracking-[0.18em]">
+            <p className="animate-hero-line animate-hero-line-2 font-serif text-sm italic text-primary md:mt-4">
               Palermo y Caballito · Mar · Mié · Vie
             </p>
             <h1 className="animate-hero-line animate-hero-line-3 mt-2 font-serif text-[1.45rem] leading-snug text-heading sm:text-[1.65rem] md:mt-3 md:text-[2.45rem] md:leading-tight">
@@ -254,7 +254,7 @@ export default function BotoxPage() {
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <div className="max-w-xl">
             <h2 className="font-serif text-3xl leading-tight text-heading sm:text-4xl">
-              Cuánto cuesta
+              Precio
             </h2>
             <p className="mt-3 text-base leading-relaxed text-body">
               Precio de referencia. La dosis e indicación se confirman en la

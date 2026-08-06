@@ -22,9 +22,7 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-xs font-medium uppercase tracking-[0.18em] text-heading">
-            Ubicaciones
-          </p>
+          <p className="font-serif text-sm italic text-heading">Ubicaciones</p>
           <ul className="mt-4 flex flex-col gap-4 text-sm text-body">
             <li className="leading-relaxed">
               <span className="block text-heading">Caballito</span>
@@ -38,9 +36,7 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-xs font-medium uppercase tracking-[0.18em] text-heading">
-            Horarios
-          </p>
+          <p className="font-serif text-sm italic text-heading">Horarios</p>
           <ul className="mt-4 flex flex-col gap-2 text-sm text-body">
             <li>
               <span className="text-heading">Mar · Mié · Vie</span>
@@ -56,9 +52,7 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-xs font-medium uppercase tracking-[0.18em] text-heading">
-            Explorar
-          </p>
+          <p className="font-serif text-sm italic text-heading">Explorar</p>
           <ul className="mt-4 flex flex-col gap-3 text-sm text-body">
             {footerLinks.map((link) => (
               <li key={link.href}>

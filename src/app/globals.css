@@ -29,14 +29,14 @@
   --color-body: var(--body);
   --color-on-dark: var(--on-dark);
 
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-figtree);
+  --font-serif: var(--font-lora);
 }
 
 body {
   background: var(--background);
   color: var(--body);
-  font-family: var(--font-inter), ui-sans-serif, sans-serif;
+  font-family: var(--font-figtree), ui-sans-serif, sans-serif;
 }
 
 h1,
@@ -46,7 +46,7 @@ h4,
 h5,
 h6 {
   color: var(--heading);
-  font-family: var(--font-playfair), ui-serif, Georgia, serif;
+  font-family: var(--font-lora), ui-serif, Georgia, serif;
 }
 
 ::selection {

@@ -9,6 +9,30 @@ A cambio se pidió:
 
 Repo: [gpedrosad/draalvarez](https://github.com/gpedrosad/draalvarez)
 
+## Tipografía
+
+### Base original (referencia)
+
+Pairing con el que se armó el brief al inicio:
+
+| Rol | Fuente | Notas |
+|-----|--------|--------|
+| Títulos | **Playfair Display** | Serif de alto contraste |
+| Cuerpo / UI | **Inter** | Sans neutra |
+
+Se dejó de usar porque es el combo más asociado a webs “hechas con IA” / templates.
+
+### Actual
+
+| Rol | Fuente | Clase / variable |
+|-----|--------|------------------|
+| Títulos | **Lora** | `font-serif` → `--font-lora` |
+| Cuerpo / UI | **Figtree** | `font-sans` → `--font-figtree` |
+
+Descartado también: Cormorant Garamond + Source Sans 3 (no convenció en review).
+
+Sin eyebrows en mayúsculas con tracking amplio.
+
 ## Contacto del consultorio
 
 | Canal | Valor |

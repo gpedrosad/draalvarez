@@ -40,8 +40,8 @@ export function Hero() {
             className="animate-hero-line animate-hero-line-1 h-9 w-auto object-contain md:h-11"
             sizes="44px"
           />
-          <p className="animate-hero-line animate-hero-line-2 mt-4 text-[0.68rem] uppercase tracking-[0.18em] text-primary">
-            Medicina Estética · Palermo y Caballito
+          <p className="animate-hero-line animate-hero-line-2 mt-4 font-serif text-sm italic text-primary">
+            Medicina estética · Palermo y Caballito
           </p>
           <p className="animate-hero-line animate-hero-line-3 mt-2 font-serif text-[1.65rem] leading-tight text-heading md:text-4xl">
             Dra. Luisa Alvarez

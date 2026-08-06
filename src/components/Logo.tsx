@@ -43,7 +43,7 @@ export function Logo({
             Dra. Luisa Alvarez
           </span>
           <span
-            className={`mt-0.5 block text-[0.6rem] uppercase tracking-[0.16em] sm:text-[0.65rem] ${
+            className={`mt-0.5 block font-serif text-[0.7rem] italic sm:text-xs ${
               variant === "light" ? "text-on-dark/70" : "text-body"
             }`}
           >

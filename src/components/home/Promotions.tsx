@@ -127,7 +127,7 @@ export function Promotions() {
     <section id="promociones" className="section-defer border-t border-border bg-background">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.18em] text-primary">
+          <p className="font-serif text-sm italic text-primary">
             Promociones
           </p>
           <h2 className="mt-3 font-serif text-3xl leading-tight text-heading sm:text-4xl">
@@ -190,11 +190,11 @@ export function Promotions() {
               >
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex flex-wrap gap-2">
-                    <span className="bg-background px-2 py-1 text-[0.65rem] uppercase tracking-[0.14em] text-heading">
+                    <span className="bg-background px-2 py-1 font-serif text-xs italic text-heading">
                       {promo.kind}
                     </span>
                     {promo.highlight ? (
-                      <span className="bg-primary/15 px-2 py-1 text-[0.65rem] uppercase tracking-[0.14em] text-heading">
+                      <span className="bg-primary/15 px-2 py-1 font-serif text-xs italic text-heading">
                         {promo.highlight}
                       </span>
                     ) : null}

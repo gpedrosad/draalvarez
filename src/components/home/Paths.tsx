@@ -24,15 +24,18 @@ const paths = [
 
 export function Paths() {
   return (
-    <section id="tratamientos" className="section-defer border-t border-border bg-card">
+    <section
+      id="tratamientos"
+      className="section-defer border-t border-border bg-card"
+    >
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.18em] text-primary">
+          <h2 className="font-serif text-3xl leading-tight text-heading sm:text-4xl">
             ¿Por dónde empezar?
-          </p>
-          <h2 className="mt-3 font-serif text-3xl leading-tight text-heading sm:text-4xl">
-            Elegí tu camino. Te guiamos el resto.
           </h2>
+          <p className="mt-3 font-serif text-xl leading-snug text-body sm:text-2xl">
+            Elegí tu camino. Te guiamos el resto.
+          </p>
           <p className="mt-4 text-base leading-relaxed text-body">
             No hace falta saber el tratamiento exacto. Contanos tu objetivo y te
             orientamos.
@@ -45,7 +48,7 @@ export function Paths() {
               "surface-motion group flex flex-col border border-border bg-background p-7 hover:border-heading/30 hover:shadow-[0_12px_40px_rgba(77,69,69,0.08)] sm:p-9";
             const content = (
               <>
-                <p className="text-[0.65rem] uppercase tracking-[0.16em] text-primary">
+                <p className="font-serif text-sm italic text-primary">
                   {path.examples}
                 </p>
                 <h3 className="mt-4 font-serif text-2xl text-heading sm:text-3xl">

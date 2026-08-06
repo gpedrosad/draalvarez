@@ -16,9 +16,7 @@ export function Faq() {
     <section id="faq" className="section-defer border-t border-border bg-background">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.18em] text-primary">
-            FAQ pacientes
-          </p>
+          <p className="font-serif text-sm italic text-primary">FAQ pacientes</p>
           <h2 className="mt-3 font-serif text-3xl leading-tight text-heading sm:text-4xl">
             Consultas frecuentes
           </h2>

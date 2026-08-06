@@ -1,0 +1,35 @@
+---
+description: Tipografías del proyecto y estilos prohibidos
+alwaysApply: true
+---
+
+# Tipografía
+
+## Pairing actual
+
+| Rol | Fuente | Variable |
+|-----|--------|----------|
+| Display / títulos | **Lora** | `--font-lora` → `font-serif` |
+| Body / UI | **Figtree** | `--font-figtree` → `font-sans` |
+
+## Base original (no reactivar sin pedido)
+
+- Títulos: Playfair Display
+- Cuerpo: Inter
+
+Documentada en `docs/contexto-cliente.md` como referencia histórica del brief.
+
+## También descartado
+
+- Cormorant Garamond + Source Sans 3
+
+## Prohibido
+
+- Eyebrows en mayúsculas + letter-spacing amplio (`uppercase tracking-[0.14em]`…).
+- Volver a Inter o Playfair sin pedido explícito del usuario.
+
+## Usar
+
+- Títulos: `font-serif` (Lora), sentence case.
+- Labels: `font-serif text-sm italic`, sin uppercase.
+- Body / botones: `font-sans` (Figtree).

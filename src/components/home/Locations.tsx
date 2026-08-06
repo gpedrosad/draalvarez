@@ -6,7 +6,7 @@ export function Locations() {
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.18em] text-primary">
+            <p className="font-serif text-sm italic text-primary">
               Sedes y horarios
             </p>
             <h2 className="mt-3 font-serif text-3xl leading-tight text-heading sm:text-4xl">
