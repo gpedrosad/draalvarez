@@ -2,10 +2,10 @@ import Link from "next/link";
 import { Logo } from "@/components/Logo";
 
 const footerLinks = [
-  { href: "#tratamientos", label: "Tratamientos" },
-  { href: "#promociones", label: "Promociones" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/botox", label: "Botox" },
+  { href: "/#promociones", label: "Promociones" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/#contacto", label: "Contacto" },
 ];
 
 export function Footer() {
@@ -80,7 +80,17 @@ export function Footer() {
             © {new Date().getFullYear()} Dra. Luisa Alvarez. Todos los derechos
             reservados.
           </p>
-          <p className="tracking-wide">Palermo · Caballito</p>
+          <p>
+            Hecho por{" "}
+            <a
+              href="https://wa.me/5491133017403"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-heading underline decoration-border underline-offset-2 transition-colors hover:decoration-heading"
+            >
+              Gonzalo Pedrosa
+            </a>
+          </p>
         </div>
       </div>
     </footer>

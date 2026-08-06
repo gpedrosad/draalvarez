@@ -4,7 +4,7 @@ import { MobileNav } from "@/components/MobileNav";
 import { messages, whatsappUrl } from "@/lib/whatsapp";
 
 const navLinks = [
-  { href: "#tratamientos", label: "Tratamientos" },
+  { href: "/botox", label: "Botox" },
   { href: "#promociones", label: "Promociones" },
   { href: "#faq", label: "FAQ" },
   { href: "#contacto", label: "Contacto" },

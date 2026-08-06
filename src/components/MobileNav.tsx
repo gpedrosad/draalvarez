@@ -5,7 +5,7 @@ import { useState } from "react";
 import { messages, whatsappUrl } from "@/lib/whatsapp";
 
 const navLinks = [
-  { href: "#tratamientos", label: "Tratamientos" },
+  { href: "/botox", label: "Botox" },
   { href: "#promociones", label: "Promociones" },
   { href: "#faq", label: "FAQ" },
   { href: "#contacto", label: "Contacto" },

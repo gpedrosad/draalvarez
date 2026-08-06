@@ -25,6 +25,22 @@ export const messages = {
     "Hola, quiero turnos con Dra. Renata Moguillansky — Peeling + PRP ($135.000).",
   renataBotox:
     "Hola, quiero turnos con Dra. Renata Moguillansky — Botox ($300.000).",
+  botox:
+    "Hola, quiero consultar por Botox. Sede preferida: (Palermo / Caballito).",
+  botoxEvaluacion:
+    "Hola, quiero una evaluación para Botox. Sede preferida: (Palermo / Caballito).",
+  botoxArrugas:
+    "Hola, quiero evaluación de Botox para arrugas / líneas de expresión. Sede preferida: (Palermo / Caballito).",
+  botoxBruxismo:
+    "Hola, quiero evaluación de Botox para bruxismo. Sede preferida: (Palermo / Caballito).",
+  botoxRosacea:
+    "Hola, quiero evaluación de Botox para rosácea. Sede preferida: (Palermo / Caballito).",
+  botoxHiperhidrosis:
+    "Hola, quiero evaluación de Botox para hiperhidrosis axilar. Sede preferida: (Palermo / Caballito).",
+  botoxSebo:
+    "Hola, quiero evaluación de Botox para secreción sebácea / exceso de grasa. Sede preferida: (Palermo / Caballito).",
+  botoxPrecio:
+    "Hola, vi Botox a $300.000 (Dra. Renata Moguillansky) y quiero reservar evaluación. Sede preferida: (Palermo / Caballito).",
   claudiaPeelingLaser:
     "Hola, quiero turnos con Dra. Claudia Koch — Peeling + Láser Q-Switched ($230.000).",
   claudiaPrp:
