@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 768, 1080, 1280, 1920],
     imageSizes: [40, 64, 96, 128],
     minimumCacheTTL: 60 * 60 * 24 * 30,
+    // Sirve estáticos de /public sin sorpresas del optimizer en Vercel
+    localPatterns: [{ pathname: "/images/**" }],
   },
 };
 

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const team = [
   {
     name: "Emmanuel Forti",
@@ -31,7 +29,7 @@ export function Team() {
   return (
     <section
       id="equipo"
-      className="section-defer border-t border-border bg-background"
+      className="border-t border-border bg-background"
     >
       <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8 sm:py-24">
         <div className="max-w-2xl">
@@ -47,13 +45,16 @@ export function Team() {
           {team.map((member) => (
             <li key={member.name} className="group">
               <div className="overflow-hidden border border-border bg-card">
-                <div className="relative aspect-[4/5] overflow-hidden bg-secondary/20 sm:aspect-[3/4]">
-                  <Image
+                <div className="aspect-[4/5] overflow-hidden bg-secondary/20 sm:aspect-[3/4]">
+                  {/* img nativo: evita fallos de next/image + content-visibility en Vercel */}
+                  <img
                     src={member.image}
                     alt={member.alt}
-                    fill
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 280px"
-                    className="object-cover object-[center_18%] transition-transform duration-500 group-hover:scale-[1.03]"
+                    width={768}
+                    height={1152}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover object-[center_18%] transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                 </div>
                 <div className="p-2.5 sm:p-5">

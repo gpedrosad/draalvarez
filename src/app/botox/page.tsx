@@ -88,7 +88,7 @@ export default function BotoxPage() {
     <>
       <section className="relative overflow-hidden bg-background">
         {/* Mobile: franja baja para no comerse el primer viewport. Desktop: full-bleed */}
-        <div className="relative h-[28vh] max-h-[200px] min-h-[140px] w-full overflow-hidden sm:h-[32vh] sm:max-h-[240px] md:absolute md:inset-0 md:h-auto md:max-h-none md:min-h-full">
+        <div className="relative aspect-[4/5] max-h-[min(48vh,360px)] w-full overflow-hidden sm:aspect-[5/4] sm:max-h-[min(44vh,420px)] md:absolute md:inset-0 md:aspect-auto md:h-auto md:max-h-none md:min-h-full">
           <picture className="absolute inset-0 block h-full w-full">
             <source
               media="(max-width: 767px)"
@@ -108,10 +108,10 @@ export default function BotoxPage() {
               height={1152}
               fetchPriority="high"
               decoding="async"
-              className="h-full w-full object-cover object-[center_18%] animate-hero-zoom md:object-[60%_center]"
+              className="h-full w-full object-cover object-[center_28%] animate-hero-zoom md:object-[60%_center]"
             />
           </picture>
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-background to-transparent md:inset-0 md:h-auto md:bg-gradient-to-r md:from-background/88 md:via-background/45 md:to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent md:inset-0 md:h-auto md:bg-gradient-to-r md:from-background/88 md:via-background/45 md:to-transparent" />
         </div>
 
         <div className="relative mx-auto flex max-w-6xl items-center px-5 pb-6 pt-3 md:min-h-[calc(100svh-5rem)] md:px-8 md:py-16 md:pt-16">
