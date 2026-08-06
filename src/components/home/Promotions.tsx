@@ -211,7 +211,7 @@ export function Promotions() {
                     {promo.professional}
                   </p>
                 ) : null}
-                <p className="mt-2 text-sm leading-relaxed text-body">
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-body">
                   {promo.detail}
                 </p>
                 <span className="btn-motion mt-6 inline-flex w-fit items-center bg-heading px-4 py-2.5 text-sm tracking-wide text-on-dark group-hover:bg-primary">

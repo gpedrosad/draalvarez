@@ -69,9 +69,6 @@ export function Hero() {
               Ver promociones
             </a>
           </div>
-          <p className="animate-hero-line animate-hero-line-6 mt-3 text-xs tracking-wide text-body">
-            Mar · Mié · Vie · 10:00–20:00
-          </p>
         </div>
       </div>
     </section>

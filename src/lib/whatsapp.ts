@@ -1,4 +1,5 @@
-export const WHATSAPP_NUMBER = "5491100000000";
+/** WhatsApp del consultorio: https://wa.me/1124872810 */
+export const WHATSAPP_NUMBER = "1124872810";
 
 export function whatsappUrl(message: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
