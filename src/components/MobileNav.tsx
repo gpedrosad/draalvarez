@@ -1,18 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { getPrimaryNavLinks } from "@/lib/navigation";
 import { messages, whatsappUrl } from "@/lib/whatsapp";
-
-const navLinks = [
-  { href: "/botox", label: "Botox" },
-  { href: "#promociones", label: "Promociones" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contacto", label: "Contacto" },
-];
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const navLinks = getPrimaryNavLinks(pathname);
 
   return (
     <>
@@ -45,9 +42,8 @@ export function MobileNav() {
 
       <div
         id="mobile-nav"
-        className={`absolute inset-x-0 top-full overflow-hidden border-b border-border bg-background transition-[max-height,opacity] duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] md:hidden ${
-          open ? "max-h-72 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        hidden={!open}
+        className="absolute inset-x-0 top-full overflow-hidden border-b border-border bg-background md:hidden"
       >
         <nav className="flex flex-col gap-1 px-5 py-4" aria-label="Móvil">
           {navLinks.map((link) => (

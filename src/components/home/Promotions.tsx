@@ -141,8 +141,7 @@ export function Promotions() {
 
         <div
           className="mt-10 flex gap-1 rounded-sm border border-border bg-card p-1"
-          role="tablist"
-          aria-label="Tipo de promoción"
+          aria-label="Filtrar promociones"
         >
           {tabs.map((item) => {
             const active = tab === item.id;
@@ -150,8 +149,7 @@ export function Promotions() {
               <button
                 key={item.id}
                 type="button"
-                role="tab"
-                aria-selected={active}
+                aria-pressed={active}
                 onClick={() => setTab(item.id)}
                 className={`flex-1 px-3 py-3 text-sm tracking-wide transition-[background-color,color,transform] duration-200 ease-[cubic-bezier(0.25,1,0.5,1)] ${
                   active

@@ -2,15 +2,15 @@
 
 :root {
   /* Paleta — clínica estética premium */
-  --primary: #8e7c7a;
-  --secondary: #b29f9e;
+  --primary: #74615f;
+  --secondary: #cbb8b6;
   --background: #f4eeee;
   --card: #ffffff;
   --border: #e7dfde;
 
   /* Texto */
   --heading: #4d4545;
-  --body: #7a7171;
+  --body: #625858;
   --on-dark: #ffffff;
 
   /* Motion */
@@ -31,6 +31,10 @@
 
   --font-sans: var(--font-figtree);
   --font-serif: var(--font-lora);
+}
+
+html {
+  scroll-padding-top: 5rem;
 }
 
 body {

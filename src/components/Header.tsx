@@ -1,16 +1,16 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Logo } from "@/components/Logo";
 import { MobileNav } from "@/components/MobileNav";
+import { getPrimaryNavLinks } from "@/lib/navigation";
 import { messages, whatsappUrl } from "@/lib/whatsapp";
 
-const navLinks = [
-  { href: "/botox", label: "Botox" },
-  { href: "#promociones", label: "Promociones" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contacto", label: "Contacto" },
-];
-
 export function Header() {
+  const pathname = usePathname();
+  const navLinks = getPrimaryNavLinks(pathname);
+
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/95">
       <div className="relative mx-auto flex h-[4.25rem] max-w-6xl items-center justify-between gap-4 px-5 sm:h-[5rem] sm:px-8">

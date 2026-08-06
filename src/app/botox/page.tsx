@@ -5,9 +5,9 @@ import { BotoxStickyCta } from "@/components/botox/StickyCta";
 import { messages, whatsappUrl } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Botox en Palermo y Caballito | Dra. Luisa Alvarez",
+  title: "Botox en Palermo y Caballito | Equipo Dra. Luisa Alvarez",
   description:
-    "Toxina botulínica para arrugas, bruxismo, rosácea, hiperhidrosis axilar y secreción sebácea. Evaluación médica en Palermo y Caballito. Desde $300.000.",
+    "Toxina botulínica con evaluación médica dentro del equipo de Dra. Luisa Alvarez. Atención por Dra. Renata Moguillansky en Palermo y Caballito. Desde $300.000.",
 };
 
 const indications = [
@@ -125,13 +125,14 @@ export default function BotoxPage() {
               sizes="44px"
             />
             <p className="animate-hero-line animate-hero-line-2 font-serif text-sm italic text-primary md:mt-4">
-              Palermo y Caballito · Mar · Mié · Vie
+              Equipo Dra. Luisa Alvarez · Palermo y Caballito
             </p>
             <h1 className="animate-hero-line animate-hero-line-3 mt-2 font-serif text-[1.45rem] leading-snug text-heading sm:text-[1.65rem] md:mt-3 md:text-[2.45rem] md:leading-tight">
-              Botox con criterio médico: arrugas, bruxismo, rosácea y más
+              Botox con evaluación médica del equipo de Dra. Luisa Alvarez
             </h1>
             <p className="animate-hero-line animate-hero-line-4 mt-2 text-sm leading-relaxed text-body md:mt-4 md:text-base">
-              Elegí tu motivo y escribinos por WhatsApp para agendar evaluación.
+              La atención está a cargo de la Dra. Renata Moguillansky. Elegí tu
+              motivo y agendá por WhatsApp.
             </p>
             <div className="animate-hero-line animate-hero-line-5 mt-4 flex flex-col gap-2 sm:flex-row sm:items-center md:mt-6 md:gap-2.5">
               <a
@@ -151,7 +152,7 @@ export default function BotoxPage() {
               </a>
             </div>
             <p className="animate-hero-line animate-hero-line-6 mt-3 text-[0.7rem] tracking-wide text-body md:mt-4 md:text-xs">
-              Desde $300.000 · Dra. Renata Moguillansky
+              Desde $300.000 · Mar, mié y vie · Palermo o Caballito
             </p>
           </div>
         </div>
@@ -281,7 +282,13 @@ export default function BotoxPage() {
 
             <dl className="divide-y divide-border border-y border-border">
               <div className="grid gap-1 py-4 sm:grid-cols-[10rem_1fr] sm:gap-6 sm:py-5">
-                <dt className="text-sm text-body">Profesional</dt>
+                <dt className="text-sm text-body">Equipo</dt>
+                <dd className="text-sm text-heading">
+                  Dra. Luisa Alvarez | Medicina Estética
+                </dd>
+              </div>
+              <div className="grid gap-1 py-4 sm:grid-cols-[10rem_1fr] sm:gap-6 sm:py-5">
+                <dt className="text-sm text-body">Profesional tratante</dt>
                 <dd className="text-sm text-heading">
                   Dra. Renata Moguillansky
                 </dd>
@@ -352,7 +359,10 @@ export default function BotoxPage() {
         </div>
       </section>
 
-      <section className="section-defer border-t border-border bg-background">
+      <section
+        id="faq"
+        className="section-defer border-t border-border bg-background"
+      >
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <h2 className="font-serif text-3xl leading-tight text-heading sm:text-4xl">
             Dudas frecuentes
@@ -384,7 +394,7 @@ export default function BotoxPage() {
             Un mensaje. Tu evaluación.
           </p>
           <p className="mx-auto mt-5 max-w-lg text-base leading-relaxed text-body">
-            Dec hace falta saber la dosis exacta. Contanos el motivo y la sede:
+            No hace falta saber la dosis exacta. Contanos el motivo y la sede:
             te guiamos desde ahí.
           </p>
           <a
