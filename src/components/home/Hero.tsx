@@ -47,7 +47,7 @@ export function Hero() {
             Dra. Luisa Alvarez
           </p>
           <h1 className="animate-hero-line animate-hero-line-4 mt-4 font-serif text-[1.55rem] leading-snug text-heading md:mt-5 md:text-[2.35rem] md:leading-tight">
-            Medicina estética con diagnóstico médico en Palermo y Caballito.
+            Diagnóstico médico antes de tratar.
           </h1>
           <p className="animate-hero-line animate-hero-line-5 mt-3 text-sm leading-relaxed text-body md:text-base">
             Atención por la Dra. Luisa Alvarez y equipo: piel, inyectables,

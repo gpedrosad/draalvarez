@@ -74,7 +74,7 @@ export function Team() {
           href="#promociones"
           className="mt-6 inline-flex text-sm tracking-wide text-heading underline decoration-border underline-offset-4 transition-colors hover:decoration-heading sm:mt-10"
         >
-          Ver tratamientos por profesional →
+          Ver packs en promoción →
         </a>
       </div>
     </section>
