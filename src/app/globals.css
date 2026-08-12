@@ -146,6 +146,34 @@ h6 {
   animation-delay: 900ms;
 }
 
+@keyframes reviews-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.reviews-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  padding-inline: 1.25rem;
+  animation: reviews-marquee 70s linear infinite;
+}
+
+.reviews-marquee:hover .reviews-marquee-track {
+  animation-play-state: paused;
+}
+
+@media (min-width: 640px) {
+  .reviews-marquee-track {
+    gap: 1.25rem;
+    padding-inline: 2rem;
+  }
+}
+
 /* Feedback: CTAs */
 .btn-motion {
   transition:
@@ -181,11 +209,20 @@ h6 {
   .animate-hero-zoom,
   .animate-hero-panel,
   .animate-hero-line,
-  .animate-soft-enter {
+  .animate-soft-enter,
+  .reviews-marquee-track {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
     clip-path: none !important;
+  }
+
+  .reviews-marquee {
+    overflow-x: auto;
+  }
+
+  .reviews-marquee-track {
+    width: max-content;
   }
 
   .btn-motion,

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
+import { INSTAGRAM_URL, locations } from "@/lib/links";
 
 const footerLinks = [
   { href: "/botox", label: "Botox" },
@@ -19,19 +20,32 @@ export function Footer() {
             para realzar tu belleza natural con resultados sutiles y
             duraderos.
           </p>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-block text-sm text-body transition-colors hover:text-heading"
+          >
+            Instagram
+          </a>
         </div>
 
         <div>
           <p className="font-serif text-sm italic text-heading">Ubicaciones</p>
           <ul className="mt-4 flex flex-col gap-4 text-sm text-body">
-            <li className="leading-relaxed">
-              <span className="block text-heading">Caballito</span>
-              Federico García Lorca 55, CABA
-            </li>
-            <li className="leading-relaxed">
-              <span className="block text-heading">Palermo</span>
-              Sinclair 2949, CABA
-            </li>
+            {locations.map((location) => (
+              <li key={location.name} className="leading-relaxed">
+                <span className="block text-heading">{location.name}</span>
+                <a
+                  href={location.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-border underline-offset-4 transition-colors hover:text-heading hover:decoration-heading"
+                >
+                  {location.addressLine}, {location.city}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 

@@ -1,3 +1,4 @@
+import { locations } from "@/lib/links";
 import { whatsappUrl } from "@/lib/whatsapp";
 
 export function Locations() {
@@ -29,22 +30,23 @@ export function Locations() {
         </div>
 
         <div className="mt-12 grid gap-8 border-t border-border pt-10 md:grid-cols-3">
-          <div>
-            <h3 className="font-serif text-xl text-heading">Caballito</h3>
-            <p className="mt-3 text-sm leading-relaxed text-body">
-              Federico García Lorca 55
-              <br />
-              CABA
-            </p>
-          </div>
-          <div>
-            <h3 className="font-serif text-xl text-heading">Palermo</h3>
-            <p className="mt-3 text-sm leading-relaxed text-body">
-              Sinclair 2949
-              <br />
-              CABA
-            </p>
-          </div>
+          {locations.map((location) => (
+            <div key={location.name}>
+              <h3 className="font-serif text-xl text-heading">
+                {location.name}
+              </h3>
+              <a
+                href={location.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 block text-sm leading-relaxed text-body underline decoration-border underline-offset-4 transition-colors hover:text-heading hover:decoration-heading"
+              >
+                {location.addressLine}
+                <br />
+                {location.city}
+              </a>
+            </div>
+          ))}
           <div>
             <h3 className="font-serif text-xl text-heading">Horarios</h3>
             <p className="mt-3 text-sm leading-relaxed text-body">
