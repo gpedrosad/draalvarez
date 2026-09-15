@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Figtree, Lora } from "next/font/google";
+import { ComingSoon } from "@/components/ComingSoon";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { COMING_SOON } from "@/lib/coming-soon";
 import "./globals.css";
 
 /** Body / UI */
@@ -23,11 +25,20 @@ const lora = Lora({
   weight: ["400", "500", "600", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "Dra. Luisa Alvarez | Medicina Estética",
-  description:
-    "Medicina estética en Palermo y Caballito. Caballito: Federico García Lorca 55. Palermo: Sinclair 2949. Atención martes, miércoles y viernes de 10:00 a 20:00.",
-};
+export const metadata: Metadata = COMING_SOON
+  ? {
+      title: {
+        absolute: "Sitio en construcción | Dra. Luisa Alvarez",
+      },
+      description:
+        "Estamos preparando la web. El consultorio sigue atendiendo en Palermo y Caballito. Reservá por WhatsApp.",
+      robots: { index: false, follow: false },
+    }
+  : {
+      title: "Dra. Luisa Alvarez | Medicina Estética",
+      description:
+        "Medicina estética en Palermo y Caballito. Caballito: Federico García Lorca 55. Palermo: Sinclair 2949. Atención martes, miércoles y viernes de 10:00 a 20:00.",
+    };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -36,10 +47,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${figtree.variable} ${lora.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        {COMING_SOON ? (
+          <>
+            <ComingSoon />
+            <WhatsAppButton />
+          </>
+        ) : (
+          <>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <WhatsAppButton />
+          </>
+        )}
       </body>
     </html>
   );

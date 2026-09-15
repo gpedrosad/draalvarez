@@ -1,13 +1,15 @@
-/** WhatsApp del consultorio: https://wa.me/1124872810 */
-export const WHATSAPP_NUMBER = "1124872810";
+/** WhatsApp del consultorio: +54 9 11 2487-2810 */
+export const WHATSAPP_NUMBER = "5491124872810";
 
 export function whatsappUrl(message: string) {
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  const text = encodeURIComponent(message);
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
 }
 
 export const messages = {
   general:
     "Hola Dra. Luisa Alvarez, me gustaría agendar una cita de medicina estética. Sede preferida: (Palermo / Caballito).",
+  comingSoon: "Hola, vengo desde la web",
   evaluacion:
     "Hola, quiero reservar una evaluación dermatoestética (consulta 360°). Sede preferida: (Palermo / Caballito).",
   problema:

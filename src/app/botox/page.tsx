@@ -3,13 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { BotoxStickyCta } from "@/components/botox/StickyCta";
 import { locations } from "@/lib/links";
+import { COMING_SOON } from "@/lib/coming-soon";
 import { messages, whatsappUrl } from "@/lib/whatsapp";
 
-export const metadata: Metadata = {
-  title: "Botox en Palermo y Caballito | Equipo Dra. Luisa Alvarez",
-  description:
-    "Toxina botulínica con evaluación médica dentro del equipo de Dra. Luisa Alvarez. Atención por Dra. Renata Moguillansky en Palermo y Caballito. Desde $300.000.",
-};
+export const metadata: Metadata = COMING_SOON
+  ? {
+      title: {
+        absolute: "Sitio en construcción | Dra. Luisa Alvarez",
+      },
+      description:
+        "Estamos preparando la web. El consultorio sigue atendiendo en Palermo y Caballito. Reservá por WhatsApp.",
+      robots: { index: false, follow: false },
+    }
+  : {
+      title: "Botox en Palermo y Caballito | Equipo Dra. Luisa Alvarez",
+      description:
+        "Toxina botulínica con evaluación médica dentro del equipo de Dra. Luisa Alvarez. Atención por Dra. Renata Moguillansky en Palermo y Caballito. Desde $300.000.",
+    };
 
 const indications = [
   {

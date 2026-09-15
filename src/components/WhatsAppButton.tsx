@@ -1,9 +1,10 @@
+import { COMING_SOON } from "@/lib/coming-soon";
 import { messages, whatsappUrl } from "@/lib/whatsapp";
 
 export function WhatsAppButton() {
   return (
     <a
-      href={whatsappUrl(messages.general)}
+      href={whatsappUrl(COMING_SOON ? messages.comingSoon : messages.general)}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Escribir por WhatsApp"
